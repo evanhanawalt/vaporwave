@@ -3,6 +3,9 @@
 I saw [this site](https://trashtastetour22.com/), tested my HTML/CSS skills by trying to mimic it, and learned some new tricks along the way.
 
 
+The site does not work for mobile devices. Maybe I will attempt to add that in the future. 
+
+
 ## Instructions
 
 local Dev: `npm run dev`
