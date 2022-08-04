@@ -1,0 +1,53 @@
+.floor {
+  height: 650px;
+  background-image: repeating-linear-gradient(
+      0deg,
+      #67e8f9,
+      #67e8f9 4px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      -90deg,
+      #67e8f9,
+      #67e8f9 3px,
+      transparent 2px,
+      transparent 40px
+    );
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px transparent, 0 0 20px #fff, 0 0 40px #e879f9,
+      0 0 70px #e879f9, 0 0 80px #e879f9, 0 0 100px #e879f9, 0 0 150px #e879f9;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #e879f9, 0 0 35px #e879f9,
+      0 0 40px #e879f9, 0 0 50px #e879f9, 0 0 75px #e879f9;
+  }
+}
+.heading {
+  font-size: 3em;
+  animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+.floor-bg {
+  background: linear-gradient(#67e8f9, #a78bfa, #0f172a);
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 100vh;
+  box-shadow: 0 0 10px 20px #67e8f9;
+}
+body {
+  overflow-x: hidden;
+  background-color: #0f172a;
+}
+svg.icon {
+  max-width: 425px;
+  margin: 20px auto;
+  fill: #67e8f9;
+}
